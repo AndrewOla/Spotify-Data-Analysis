@@ -6,6 +6,7 @@ df = pd.read_csv("MisssingValuesHandled.csv")
 df['ts'] = pd.to_datetime(df['ts'])
 
 df['hour'] = df['ts'].dt.hour
+
 df['day'] = df['ts'].dt.day_name()
 df['month'] = df['ts'].dt.month_name()
 df['year'] = df['ts'].dt.year
