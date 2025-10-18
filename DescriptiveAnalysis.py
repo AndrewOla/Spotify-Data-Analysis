@@ -2,23 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.read_csv("MisssingValuesHandled.csv")
-#print(df.head())
-#df.info()
-#print(df.describe())
-#print(df.columns)
-
-
-#checking if there are still missing values
-#print(df.isnull().sum())
-
-
-#Timestamp
-#from datetime import datetime
-#timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-#filename = f"spotify_cleaned_{timestamp}.csv"
-#df.to_csv(filename, index=False)
-
-#print(df.duplicated().sum())
 
 #Top Tracks
 top_tracks = df['track_name'].value_counts().head(50)

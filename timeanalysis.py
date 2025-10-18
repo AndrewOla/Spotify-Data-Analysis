@@ -159,15 +159,6 @@ artist_monthly = df[df['artist_name'].isin(top5_artists)].groupby(
 # Reorder months
 artist_monthly = artist_monthly.reindex(month_order)
 
-# Plot
-artist_monthly.plot(kind='bar', figsize=(14, 6), stacked=True)
-plt.title("Top 5 Artists' Monthly Listening Trend")
-plt.xlabel("Month")
-plt.ylabel("Play Count")
-plt.xticks(rotation=45)
-plt.legend(title="Artist", bbox_to_anchor=(1.02, 1), loc='upper left')
-plt.tight_layout()
-plt.show()
 
 #yearly trend
 yearly = df['year'].value_counts().sort_index()
