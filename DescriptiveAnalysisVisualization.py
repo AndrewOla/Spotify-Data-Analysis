@@ -12,7 +12,6 @@ top_artists = pd.read_csv("summaries/top_artists.csv", index_col=0).squeeze("col
 top_albums = pd.read_csv("summaries/top_albums.csv", index_col=0).squeeze("columns")
 listening_by_artist = pd.read_csv("summaries/listening_by_artist.csv", index_col=0).squeeze("columns")
 
-
 # Prepare top lists
 top_tracks = df['track_name'].value_counts().head(50)
 top_artists = df['artist_name'].value_counts().head(50)

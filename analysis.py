@@ -13,7 +13,6 @@ df = pd.read_csv("spotify_history.csv")
 print(df.isnull().sum())
 
 
-
 # Find rows where either 'reason_start' or 'reason_end' is missing
 #missing_either = df[df['reason_start'].isnull() | df['reason_end'].isnull()]
 #print(missing_either)

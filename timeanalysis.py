@@ -13,7 +13,6 @@ df['year'] = df['ts'].dt.year
 
 print(df['year'].value_counts().sort_index())
 
-
 print(df.dtypes)
 print(df.columns)
 df.head()
